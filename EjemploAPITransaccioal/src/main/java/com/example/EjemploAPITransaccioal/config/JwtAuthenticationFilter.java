@@ -93,7 +93,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         }
 
         filterChain.doFilter(request, response);
-
     }
     public Usuario obtenerUsuarioDelToken(String token) {
         String correo = obtenerCorreoDelToken(token);
